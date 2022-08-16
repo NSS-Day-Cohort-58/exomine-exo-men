@@ -1,8 +1,10 @@
-import { getColonies, getColoniesMinerals, getMinerals } from "./database.js"
+import { getColonies, getColoniesMinerals, getMinerals, getMineralFacility } from "./database.js"
 
 const buildOrderListItem = (order) => {
     const colonies = getColonies()
     const minerals = getMinerals()
+    const coloniesMinerals = getColoniesMinerals()
+    const mineralFacilities = getMineralFacility()
 
     const colonyName = colonies.find(
         (colony) => {
@@ -13,22 +15,17 @@ const buildOrderListItem = (order) => {
 
     const foundMineral = minerals.find(
         (mineral) => {
-            if (mineral.id === order.mineralID)
+            if (mineral.id === order.mineralId)
             return mineral.name
         }
 
     )
         
-   const mineralTons = minerals.find(
-        (mineral) => {
-            if (mineral.id === order.mineralID)
-            return order.tons++
-        }
-   )
+   const mineralTons = order.tons++
 
-    return `<h2>${colonyName}<h2>
+    return `<h2>${colonyName.name}<h2>
             <h4>
-                ${mineralTons} tons of ${foundMineral}
+                ${mineralTons} tons of ${foundMineral.name}
             <h4>`
 }
 
