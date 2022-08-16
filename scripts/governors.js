@@ -1,8 +1,15 @@
-import { getGovernors } from "./database.js"
+import { getGovernors, setColonies } from "./database.js"
 
 const governers = getGovernors()
 
-
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "governer") {
+            setColonies(parseInt(event.target.value))
+        }
+    }
+)
 
 
 
@@ -11,7 +18,7 @@ const governers = getGovernors()
 
 export const Governers = () => {
     return `<h2>Governors</h2>
-        <select id="wheel">
+        <select id="governer">
             <option value="1">Select a governer type</option>
             ${governers.map(
         (governer) => {
