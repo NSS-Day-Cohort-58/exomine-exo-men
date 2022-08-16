@@ -4,6 +4,8 @@ import { Facilities } from "./facilities.js"
 
 import { Governers } from "./governors.js"
 
+import { Sales } from "./colonies.js"
+ 
 // import { addPurchase } from "./database.js"
 // import { Sales } from "./Sales.js"
 // import {Entrees} from "./Entrees.js"
@@ -41,8 +43,7 @@ export const Exomine = () => {
         </article>
 
         <article class="customerOrders">
-            <h2>Europa Minerals</h2>
-           
+            ${Sales()}
         </article>
 
         <article>
