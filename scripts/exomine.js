@@ -1,5 +1,9 @@
 // import functions go here 
+
 import { Facilities } from "./facilities.js"
+
+import { Governers } from "./governors.js"
+
 // import { addPurchase } from "./database.js"
 // import { Sales } from "./Sales.js"
 // import {Entrees} from "./Entrees.js"
@@ -26,7 +30,7 @@ export const Exomine = () => {
 
         <article class="choices">
              <section class="choices__governor options">
-                 
+                 ${Governers()}
              </section>
              <section class="choices__facility options">
                  ${Facilities()}
