@@ -1,0 +1,503 @@
+Script started on 2022-08-15 14:06:22-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="123" LINES="33"]
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;32m➜  [36mexomine-exo-men[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscr
+[0mSCREEN_NO     scrcons.exe   screen        script        scriptreplay  scrnsave.scr  scrrun.dll                
+[JScripts       [Jscrcons.mof   [Jscreendump    [Jscripto.dll   [J[01;34mscripts[0m/      [Jscrobj.dll    [J                        [A[A[0m[27m[24m[32Cscr[Kipts
+[J[J[0mScripts   [J[01;34mscripts[0m/[J[A[0m[27m[24m[32Cscripts[K[?1l>[?2004l
+[J]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men/scripts]1;..o-men/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls --color=tty]1;lsdatabase.js  main.js
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men/scripts]1;..o-men/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;32m➜  [36mexomine-exo-men[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hc ggit branch       chekc  ckout - b b natm han-work[?1l>[?2004l
+]2;git checkout -b nathan-work]1;gitSwitched to a new branch 'nathan-work'
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;32m➜  [36mexomine-exo-men[00m [01;34mgit:([31mnathan-work[34m) [33m✗[00m [K[?1h=[?2004hggit-0b  branch[?1l>[?2004l
+]2;git-branch]1;git-branchzsh: command not found: git-branch
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;31m➜  [36mexomine-exo-men[00m [01;34mgit:([31mnathan-work[34m) [33m✗[00m [K[?1h=[?2004hggit 0 -branch[?1l>[?2004l
+]2;git -branch]1;gitunknown option: -branch
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;31m➜  [36mexomine-exo-men[00m [01;34mgit:([31mnathan-work[34m) [33m✗[00m [K[?1h=[?2004hggit checkout nam   main[?1l>[?2004l
+]2;git checkout main]1;gitSwitched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;32m➜  [36mexomine-exo-men[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit stauts[?1l>[?2004l
+]2;git stauts]1;gitgit: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;31m➜  [36mexomine-exo-men[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mtypescript[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;32m➜  [36mexomine-exo-men[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggict  t   t che c eckoujt  t nathan-work[?1l>[?2004l
+]2;git checkout nathan-work]1;gitSwitched to branch 'nathan-work'
+[1m[7m%[27m[1m[0m                                                                                                                           ]2;bucephalus@Bucephalus:~/workspace/exomine-exo-men]1;..omine-exo-men[0m[27m[24m[J[01;32m➜  [36mexomine-exo-men[00m [01;34mgit:([31mnathan-work[34m) [33m✗[00m [K[?1h=[?2004hggit help -a[?1l>[?2004l
+]2;git help -a]1;git[?1049h[22;0;0t[?1h=See 'git help <command>' to read about a specific subcommand[m
+[m
+Main Porcelain Commands[m
+   add                  Add file contents to the index[m
+   am                   Apply a series of patches from a mailbox[m
+   archive              Create an archive of files from a named tree[m
+   bisect               Use binary search to find the commit that introduced a bug[m
+   branch               List, create, or delete branches[m
+   bundle               Move objects and refs by archive[m
+   checkout             Switch branches or restore working tree files[m
+   cherry-pick          Apply the changes introduced by some existing commits[m
+   citool               Graphical alternative to git-commit[m
+   clean                Remove untracked files from the working tree[m
+   clone                Clone a repository into a new directory[m
+   commit               Record changes to the repository[m
+   describe             Give an object a human readable name based on an available ref[m
+   diff                 Show changes between commits, commit and working tree, etc[m
+   fetch                Download objects and refs from another repository[m
+   format-patch         Prepare patches for e-mail submission[m
+   gc                   Cleanup unnecessary files and optimize the local repository[m
+   gitk                 The Git repository browser[m
+   grep                 Print lines matching a pattern[m
+   gui                  A portable graphical interface to Git[m
+   init                 Create an empty Git repository or reinitialize an existing one[m
+   log                  Show commit logs[m
+   maintenance          Run tasks to optimize Git repository data[m
+   merge                Join two or more development histories together[m
+   mv                   Move or rename a file, a directory, or a symlink[m
+   notes                Add or inspect object notes[m
+   pull                 Fetch from and integrate with another repository or a local branch[m
+   push                 Update remote refs along with associated objects[m
+   range-diff           Compare two commit ranges (e.g. two versions of a branch)[m
+:[K[H[2J[H[H[2J[HSee 'git help <command>' to read about a specific subcommand[m
+[m
+Main Porcelain Commands[m
+   add                  Add file contents to the index[m
+   am                   Apply a series of patches from a mailbox[m
+   archive              Create an archive of files from a named tree[m
+   bisect               Use binary search to find the commit that introduced a bug[m
+   branch               List, create, or delete branches[m
+   bundle               Move objects and refs by archive[m
+   checkout             Switch branches or restore working tree files[m
+   cherry-pick          Apply the changes introduced by some existing commits[m
+   citool               Graphical alternative to git-commit[m
+   clean                Remove untracked files from the working tree[m
+   clone                Clone a repository into a new directory[m
+   commit               Record changes to the repository[m
+   describe             Give an object a human readable name based on an available ref[m
+   diff                 Show changes between commits, commit and working tree, etc[m
+   fetch                Download objects and refs from another repository[m
+   format-patch         Prepare patches for e-mail submission[m
+   gc                   Cleanup unnecessary files and optimize the local repository[m
+   gitk                 The Git repository browser[m
+   grep                 Print lines matching a pattern[m
+   gui                  A portable graphical interface to Git[m
+   init                 Create an empty Git repository or reinitialize an existing one[m
+   log                  Show commit logs[m
+   maintenance          Run tasks to optimize Git repository data[m
+   merge                Join two or more development histories together[m
+   mv                   Move or rename a file, a directory, or a symlink[m
+   notes                Add or inspect object notes[m
+:[K[K [KESCESC[KOO[KBB[K   pull                 Fetch from and integrate with another repository or a local branch[m
+:[K[K [KESCESC[KOO[KBB[K   push                 Update remote refs along with associated objects[m
+:[K[K [KESCESC[KOO[KBB[K   range-diff           Compare two commit ranges (e.g. two versions of a branch)[m
+:[K[K [KESCESC[KOO[KAA[K[HMMain Porcelain Commands[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HMSee 'git help <command>' to read about a specific subcommand[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K   pull                 Fetch from and integrate with another repository or a local branch[m
+:[K[K [KESCESC[KOO[KBB[K   push                 Update remote refs along with associated objects[m
+:[K[K [KESCESC[KOO[KBB[K   range-diff           Compare two commit ranges (e.g. two versions of a branch)[m
+:[K[K [KESCESC[KOO[KBB[K   rebase               Reapply commits on top of another base tip[m
+:[K[K [KESCESC[KOO[KBB[K   reset                Reset current HEAD to the specified state[m
+:[K[K [KESCESC[KOO[KBB[K   restore              Restore working tree files[m
+:[K[K [KESCESC[KOO[KBB[K   revert               Revert some existing commits[m
+:[K[K [KESCESC[KOO[KBB[K   rm                   Remove files from the working tree and from the index[m
+:[K[K [KESCESC[KOO[KBB[K   shortlog             Summarize 'git log' output[m
+:[K[K [KESCESC[KOO[KBB[K   show                 Show various types of objects[m
+:[K[K [KESCESC[KOO[KBB[K   sparse-checkout      Reduce your working tree to a subset of tracked files[m
+:[K[K [KESCESC[KOO[KBB[K   stash                Stash the changes in a dirty working directory away[m
+:[K[K [KESCESC[KOO[KBB[K   status               Show the working tree status[m
+:[K[K [KESCESC[KOO[KBB[K   submodule            Initialize, update or inspect submodules[m
+:[K[K [KESCESC[KOO[KBB[K   switch               Switch branches[m
+:[K[K [KESCESC[KOO[KBB[K   tag                  Create, list, delete or verify a tag object signed with GPG[m
+:[K[K [KESCESC[KOO[KBB[K   worktree             Manage multiple working trees[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KAncillary Commands / Manipulators[m
+:[K[K [KESCESC[KOO[KBB[K   config               Get and set repository or global options[m
+:[K[K [KESCESC[KOO[KBB[K   fast-export          Git data exporter[m
+:[K[K [KESCESC[KOO[KBB[K   fast-import          Backend for fast Git data importers[m
+:[K[K [KESCESC[KOO[KBB[K   filter-branch        Rewrite branches[m
+:[K[K [KESCESC[KOO[KBB[K   mergetool            Run merge conflict resolution tools to resolve merge conflicts[m
+:[K[K [KESCESC[KOO[KBB[K   pack-refs            Pack heads and tags for efficient repository access[m
+:[K[K [KESCESC[KOO[KBB[K   prune                Prune all unreachable objects from the object database[m
+:[K[K [KESCESC[KOO[KBB[K   reflog               Manage reflog information[m
+:[K[K [KESCESC[KOO[KBB[K   remote               Manage set of tracked repositories[m
+:[K[K [KESCESC[KOO[KBB[K   repack               Pack unpacked objects in a repository[m
+:[K[K [KESCESC[KOO[KBB[K   replace              Create, list, delete refs to replace objects[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KAncillary Commands / Interrogators[m
+:[K[K [KESCESC[KOO[KBB[K   annotate             Annotate file lines with commit information[m
+:[K[K [KESCESC[KOO[KBB[K   blame                Show what revision and author last modified each line of a file[m
+:[K[K [KESCESC[KOO[KBB[K   bugreport            Collect information for user to file a bug report[m
+:[K[K [KESCESC[KOO[KBB[K   count-objects        Count unpacked number of objects and their disk consumption[m
+:[K[K [KESCESC[KOO[KBB[K   difftool             Show changes using common diff tools[m
+:[K[K [KESCESC[KOO[KBB[K   fsck                 Verifies the connectivity and validity of the objects in the database[m
+:[K[K [KESCESC[KOO[KBB[K   gitweb               Git web interface (web frontend to Git repositories)[m
+:[K[K [KESCESC[KOO[KBB[K   help                 Display help information about Git[m
+:[K[K [KESCESC[KOO[KBB[K   instaweb             Instantly browse your working repository in gitweb[m
+:[K[K [KESCESC[KOO[KBB[K   merge-tree           Show three-way merge without touching index[m
+:[K[K [KESCESC[KOO[KBB[K   rerere               Reuse recorded resolution of conflicted merges[m
+:[K[K [KESCESC[KOO[KBB[K   show-branch          Show branches and their commits[m
+:[K[K [KESCESC[KOO[KBB[K   verify-commit        Check the GPG signature of commits[m
+:[K[K [KESCESC[KOO[KBB[K   verify-tag           Check the GPG signature of tags[m
+:[K[K [KESCESC[KOO[KBB[K   whatchanged          Show logs with difference each commit introduces[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KInteracting with Others[m
+:[K[K [KESCESC[KOO[KBB[K   archimport           Import a GNU Arch repository into Git[m
+:[K[K [KESCESC[KOO[KBB[K   cvsexportcommit      Export a single commit to a CVS checkout[m
+:[K[K [KESCESC[KOO[KBB[K   cvsimport            Salvage your data out of another SCM people love to hate[m
+:[K[K [KESCESC[KOO[KBB[K   cvsserver            A CVS server emulator for Git[m
+:[K[K [KESCESC[KOO[KBB[K   imap-send            Send a collection of patches from stdin to an IMAP folder[m
+:[K[K [KESCESC[KOO[KBB[K   p4                   Import from and submit to Perforce repositories[m
+:[K[K [KESCESC[KOO[KBB[K   quiltimport          Applies a quilt patchset onto the current branch[m
+:[K[K [KESCESC[KOO[KBB[K   request-pull         Generates a summary of pending changes[m
+:[K[K [KESCESC[KOO[KBB[K   send-email           Send a collection of patches as emails[m
+:[K[K [KESCESC[KOO[KBB[K   svn                  Bidirectional operation between a Subversion repository and Git[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KLow-level Commands / Manipulators[m
+:[K[K [KESCESC[KOO[KBB[K   apply                Apply a patch to files and/or to the index[m
+:[K[K [KESCESC[KOO[KBB[K   checkout-index       Copy files from the index to the working tree[m
+:[K[K [KESCESC[KOO[KBB[K   commit-graph         Write and verify Git commit-graph files[m
+:[K[K [KESCESC[KOO[KBB[K   commit-tree          Create a new commit object[m
+:[K[K [KESCESC[KOO[KBB[K   hash-object          Compute object ID and optionally creates a blob from a file[m
+:[K[K [KESCESC[KOO[KBB[K   index-pack           Build pack index file for an existing packed archive[m
+:[K[K [KESCESC[KOO[KBB[K   merge-file           Run a three-way file merge[m
+:[K[K [KESCESC[KOO[KBB[K   merge-index          Run a merge for files needing merging[m
+:[K[K [KESCESC[KOO[KBB[K   mktag                Creates a tag object with extra validation[m
+:[K[K [KESCESC[KOO[KBB[K   mktree               Build a tree-object from ls-tree formatted text[m
+:[K[K [KESCESC[KOO[KBB[K   multi-pack-index     Write and verify multi-pack-indexes[m
+:[K[K [KESCESC[KOO[KBB[K   pack-objects         Create a packed archive of objects[m
+:[K[K [KESCESC[KOO[KBB[K   prune-packed         Remove extra objects that are already in pack files[m
+:[K[K [KESCESC[KOO[KBB[K   read-tree            Reads tree information into the index[m
+:[K[K [KESCESC[KOO[KBB[K   symbolic-ref         Read, modify and delete symbolic refs[m
+:[K[K [KESCESC[KOO[KBB[K   unpack-objects       Unpack objects from a packed archive[m
+:[K[K [KESCESC[KOO[KBB[K   update-index         Register file contents in the working tree to the index[m
+:[K[K [KESCESC[KOO[KBB[K   update-ref           Update the object name stored in a ref safely[m
+:[K[K [KESCESC[KOO[KBB[K   write-tree           Create a tree object from the current index[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KLow-level Commands / Interrogators[m
+:[K[K [KESCESC[KOO[KBB[K   cat-file             Provide content or type and size information for repository objects[m
+:[K[K [KESCESC[KOO[KBB[K   cherry               Find commits yet to be applied to upstream[m
+:[K[K [KESCESC[KOO[KBB[K   diff-files           Compares files in the working tree and the index[m
+:[K[K [KESCESC[KOO[KBB[K   diff-index           Compare a tree to the working tree or index[m
+:[K[K [KESCESC[KOO[KBB[K   diff-tree            Compares the content and mode of blobs found via two tree objects[m
+:[K[K [KESCESC[KOO[KBB[K   for-each-ref         Output information on each ref[m
+:[K[K [KESCESC[KOO[KBB[K   for-each-repo        Run a Git command on a list of repositories[m
+:[K[K [KESCESC[KOO[KBB[K   get-tar-commit-id    Extract commit ID from an archive created using git-archive[m
+:[K[K [KESCESC[KOO[KBB[K   ls-files             Show information about files in the index and the working tree[m
+:[K[K [KESCESC[KOO[KBB[K   ls-remote            List references in a remote repository[m
+:[K[K [KESCESC[KOO[KBB[K   ls-tree              List the contents of a tree object[m
+:[K[K [KESCESC[KOO[KBB[K   merge-base           Find as good common ancestors as possible for a merge[m
+:[K[K [KESCESC[KOO[KBB[K   name-rev             Find symbolic names for given revs[m
+:[K[K [KESCESC[KOO[KBB[K   pack-redundant       Find redundant pack files[m
+:[K[K [KESCESC[KOO[KBB[K   rev-list             Lists commit objects in reverse chronological order[m
+:[K[K [KESCESC[KOO[KBB[K   rev-parse            Pick out and massage parameters[m
+:[K[K [KESCESC[KOO[KBB[K   show-index           Show packed archive index[m
+:[K[K [KESCESC[KOO[KBB[K   show-ref             List references in a local repository[m
+:[K[K [KESCESC[KOO[KBB[K   unpack-file          Creates a temporary file with a blob's contents[m
+:[K[K [KESCESC[KOO[KBB[K   var                  Show a Git logical variable[m
+:[K[K [KESCESC[KOO[KBB[K   verify-pack          Validate packed Git archive files[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KLow-level Commands / Syncing Repositories[m
+:[K[K [KESCESC[KOO[KBB[K   daemon               A really simple server for Git repositories[m
+:[K[K [KESCESC[KOO[KBB[K   fetch-pack           Receive missing objects from another repository[m
+:[K[K [KESCESC[KOO[KBB[K   http-backend         Server side implementation of Git over HTTP[m
+:[K[K [KESCESC[KOO[KBB[K   send-pack            Push objects over Git protocol to another repository[m
+:[K[K [KESCESC[KOO[KBB[K   update-server-info   Update auxiliary info file to help dumb servers[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KLow-level Commands / Internal Helpers[m
+:[K[K [KESCESC[KOO[KBB[K   check-attr           Display gitattributes information[m
+:[K[K [KESCESC[KOO[KBB[K   check-ignore         Debug gitignore / exclude files[m
+:[K[K [KESCESC[KOO[KBB[K   check-mailmap        Show canonical names and email addresses of contacts[m
+:[K[K [KESCESC[KOO[KBB[K   check-ref-format     Ensures that a reference name is well formed[m
+:[K[K [KESCESC[KOO[KBB[K   column               Display data in columns[m
+:[K[K [KESCESC[KOO[KBB[K   credential           Retrieve and store user credentials[m
+:[K[K [KESCESC[KOO[KBB[K   credential-cache     Helper to temporarily store passwords in memory[m
+:[K[K [KESCESC[KOO[KBB[K   credential-store     Helper to store credentials on disk[m
+:[K[K [KESCESC[KOO[KBB[K   fmt-merge-msg        Produce a merge commit message[m
+:[K[K [KESCESC[KOO[KBB[K   hook                 Run git hooks[m
+:[K[K [KESCESC[KOO[KBB[K   interpret-trailers   Add or parse structured information in commit messages[m
+:[K[K [KESCESC[KOO[KBB[K   mailinfo             Extracts patch and authorship from a single e-mail message[m
+:[K[K [KESCESC[KOO[KBB[K   mailsplit            Simple UNIX mbox splitter program[m
+:[K[K [KESCESC[KOO[KBB[K   merge-one-file       The standard helper program to use with git-merge-index[m
+:[K[K [KESCESC[KOO[KBB[K   patch-id             Compute unique ID for a patch[m
+:[K[K [KESCESC[KOO[KBB[K   sh-i18n              Git's i18n setup code for shell scripts[m
+:[K[K [KESCESC[KOO[KBB[K   sh-setup             Common Git shell script setup code[m
+:[K[K [KESCESC[KOO[KBB[K   stripspace           Remove unnecessary whitespace[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KExternal commands[m
+:[K[K [KESCESC[KOO[KBB[K   gui[m
+:[K[K [KESCESC[KOO[KBB[K   lfs[m
+:[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HMLow-level Commands / Syncing Repositories[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   verify-pack          Validate packed Git archive files[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   var                  Show a Git logical variable[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   unpack-file          Creates a temporary file with a blob's contents[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   show-ref             List references in a local repository[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   show-index           Show packed archive index[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   rev-parse            Pick out and massage parameters[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   rev-list             Lists commit objects in reverse chronological order[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   pack-redundant       Find redundant pack files[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   name-rev             Find symbolic names for given revs[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   merge-base           Find as good common ancestors as possible for a merge[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   ls-tree              List the contents of a tree object[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   ls-remote            List references in a remote repository[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   ls-files             Show information about files in the index and the working tree[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   get-tar-commit-id    Extract commit ID from an archive created using git-archive[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   for-each-repo        Run a Git command on a list of repositories[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   for-each-ref         Output information on each ref[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   diff-tree            Compares the content and mode of blobs found via two tree objects[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   diff-index           Compare a tree to the working tree or index[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   diff-files           Compares files in the working tree and the index[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   cherry               Find commits yet to be applied to upstream[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   cat-file             Provide content or type and size information for repository objects[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HMLow-level Commands / Interrogators[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   write-tree           Create a tree object from the current index[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   update-ref           Update the object name stored in a ref safely[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   update-index         Register file contents in the working tree to the index[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   unpack-objects       Unpack objects from a packed archive[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   symbolic-ref         Read, modify and delete symbolic refs[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   read-tree            Reads tree information into the index[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   prune-packed         Remove extra objects that are already in pack files[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   pack-objects         Create a packed archive of objects[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   multi-pack-index     Write and verify multi-pack-indexes[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   mktree               Build a tree-object from ls-tree formatted text[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   mktag                Creates a tag object with extra validation[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   merge-index          Run a merge for files needing merging[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   merge-file           Run a three-way file merge[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   index-pack           Build pack index file for an existing packed archive[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   hash-object          Compute object ID and optionally creates a blob from a file[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   commit-tree          Create a new commit object[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   commit-graph         Write and verify Git commit-graph files[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   checkout-index       Copy files from the index to the working tree[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   apply                Apply a patch to files and/or to the index[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HMLow-level Commands / Manipulators[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   svn                  Bidirectional operation between a Subversion repository and Git[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   send-email           Send a collection of patches as emails[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   request-pull         Generates a summary of pending changes[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   quiltimport          Applies a quilt patchset onto the current branch[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   p4                   Import from and submit to Perforce repositories[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   imap-send            Send a collection of patches from stdin to an IMAP folder[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   cvsserver            A CVS server emulator for Git[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   cvsimport            Salvage your data out of another SCM people love to hate[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   cvsexportcommit      Export a single commit to a CVS checkout[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   archimport           Import a GNU Arch repository into Git[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HMInteracting with Others[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   whatchanged          Show logs with difference each commit introduces[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   verify-tag           Check the GPG signature of tags[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   verify-commit        Check the GPG signature of commits[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   show-branch          Show branches and their commits[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   rerere               Reuse recorded resolution of conflicted merges[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   merge-tree           Show three-way merge without touching index[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   instaweb             Instantly browse your working repository in gitweb[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   help                 Display help information about Git[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   gitweb               Git web interface (web frontend to Git repositories)[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   fsck                 Verifies the connectivity and validity of the objects in the database[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   difftool             Show changes using common diff tools[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   count-objects        Count unpacked number of objects and their disk consumption[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   bugreport            Collect information for user to file a bug report[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   blame                Show what revision and author last modified each line of a file[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   annotate             Annotate file lines with commit information[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAncillary Commands / Interrogators[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   replace              Create, list, delete refs to replace objects[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   repack               Pack unpacked objects in a repository[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   remote               Manage set of tracked repositories[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   reflog               Manage reflog information[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   prune                Prune all unreachable objects from the object database[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   pack-refs            Pack heads and tags for efficient repository access[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   mergetool            Run merge conflict resolution tools to resolve merge conflicts[m
+[30;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   filter-branch        Rewrite branches[m
+[30;1H[K:[K[K [KESCESC[KESCESC[K:[K[K [KESCESC[KOO[KBB[K   cvsimport            Salvage your data out of another SCM people love to hate[m
+:[K[K [KESCESC[KOO[KBB[K   cvsserver            A CVS server emulator for Git[m
+:[K[K [KESCESC[KOO[KBB[K   imap-send            Send a collection of patches from stdin to an IMAP folder[m
+:[K[K [KESCESC[KOO[KBB[K   p4                   Import from and submit to Perforce repositories[m
+:[K[K [KESCESC[KOO[KBB[K   quiltimport          Applies a quilt patchset onto the current branch[m
+:[K[K [KESCESC[KOO[KBB[K   request-pull         Generates a summary of pending changes[m
+:[K[K [KESCESC[KOO[KBB[K   send-email           Send a collection of patches as emails[m
+:[K[K [KESCESC[KOO[KBB[K   svn                  Bidirectional operation between a Subversion repository and Git[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KLow-level Commands / Manipulators[m
+:[K[K [KESCESC[KOO[KBB[K   apply                Apply a patch to files and/or to the index[m
+:[K[K [KESCESC[KOO[KBB[K   checkout-index       Copy files from the index to the working tree[m
+:[K[K [KESCESC[KOO[KBB[K   commit-graph         Write and verify Git commit-graph files[m
+:[K[K [KESCESC[KOO[KBB[K   commit-tree          Create a new commit object[m
+:[K[K [KESCESC[KOO[KBB[K   hash-object          Compute object ID and optionally creates a blob from a file[m
+:[K[K [KESCESC[KOO[KBB[K   index-pack           Build pack index file for an existing packed archive[m
+:[K[K [KESCESC[KOO[KBB[K   merge-file           Run a three-way file merge[m
+:[K[K [KESCESC[KOO[KBB[K   merge-index          Run a merge for files needing merging[m
+:[K[K [KESCESC[KOO[KBB[K   mktag                Creates a tag object with extra validation[m
+:[K[K [KESCESC[KOO[KBB[K   mktree               Build a tree-object from ls-tree formatted text[m
+:[K[K [KESCESC[KOO[KBB[K   multi-pack-index     Write and verify multi-pack-indexes[m
+:[K[K [KESCESC[KOO[KBB[K   pack-objects         Create a packed archive of objects[m
+:[K[K [KESCESC[KOO[KBB[K   prune-packed         Remove extra objects that are already in pack files[m
+:[K[K [KESCESC[KOO[KBB[K   read-tree            Reads tree information into the index[m
+:[K[K [KESCESC[KOO[KBB[K   symbolic-ref         Read, modify and delete symbolic refs[m
+:[K[K [KESCESC[KOO[KBB[K   unpack-objects       Unpack objects from a packed archive[m
+:[K[K [KESCESC[KOO[KBB[K   update-index         Register file contents in the working tree to the index[m
+:[K[K [KESCESC[KOO[KBB[K   update-ref           Update the object name stored in a ref safely[m
+:[K[K [KESCESC[KOO[KBB[K   write-tree           Create a tree object from the current index[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KLow-level Commands / Interrogators[m
+:[K[K [KESCESC[KOO[KBB[K   cat-file             Provide content or type and size information for repository objects[m
+:[K[K [KESCESC[KOO[KBB[K   cherry               Find commits yet to be applied to upstream[m
+:[K[K [KESCESC[KOO[KBB[K   diff-files           Compares files in the working tree and the index[m
+:[K[K [KESCESC[KOO[KBB[K   diff-index           Compare a tree to the working tree or index[m
+:[K[K [KESCESC[KOO[KBB[K   diff-tree            Compares the content and mode of blobs found via two tree objects[m
+:[K[K [KESCESC[KOO[KBB[K   for-each-ref         Output information on each ref[m
+:[K[K [KESCESC[KOO[KBB[K   for-each-repo        Run a Git command on a list of repositories[m
+:[K[K [KESCESC[KOO[KBB[K   get-tar-commit-id    Extract commit ID from an archive created using git-archive[m
+:[K[K [KESCESC[KOO[KBB[K   ls-files             Show information about files in the index and the working tree[m
+:[K[K [KESCESC[KOO[KBB[K   ls-remote            List references in a remote repository[m
+:[K[K [KESCESC[KOO[KBB[K   ls-tree              List the contents of a tree object[m
+:[K[K [KESCESC[KOO[KBB[K   merge-base           Find as good common ancestors as possible for a merge[m
+:[K[K [KESCESC[KOO[KBB[K   name-rev             Find symbolic names for given revs[m
+:[K[K [KESCESC[KOO[KBB[K   pack-redundant       Find redundant pack files[m
+:[K[K [KESCESC[KOO[KBB[K   rev-list             Lists commit objects in reverse chronological order[m
+:[K[K [KESCESC[KOO[KBB[K   rev-parse            Pick out and massage parameters[m
+:[K[K [KESCESC[KOO[KBB[K   show-index           Show packed archive index[m
+:[K[K [KESCESC[KOO[KBB[K   show-ref             List references in a local repository[m
+:[K[K [KESCESC[KOO[KBB[K   unpack-file          Creates a temporary file with a blob's contents[m
+:[K[K [KESCESC[KOO[KBB[K   var                  Show a Git logical variable[m
+:[K[K [KESCESC[KOO[KBB[K   verify-pack          Validate packed Git archive files[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KLow-level Commands / Syncing Repositories[m
+:[K[K [KESCESC[KOO[KBB[K   daemon               A really simple server for Git repositories[m
+:[K[K [KESCESC[KOO[KBB[K   fetch-pack           Receive missing objects from another repository[m
+:[K[K [KESCESC[KOO[KBB[K   http-backend         Server side implementation of Git over HTTP[m
+:[K[K [KESCESC[KOO[KBB[K   send-pack            Push objects over Git protocol to another repository[m
+:[K[K [KESCESC[KOO[KBB[K   update-server-info   Update auxiliary info file to help dumb servers[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KLow-level Commands / Internal Helpers[m
+:[K[K [KESCESC[KOO[KBB[K   check-attr           Display gitattributes information[m
+:[K[K [KESCESC[KOO[KBB[K   check-ignore         Debug gitignore / exclude files[m
+:[K[K [KESCESC[KOO[KBB[K   check-mailmap        Show canonical names and email addresses of contacts[m
+:[K[K [KESCESC[KOO[KBB[K   check-ref-format     Ensures that a reference name is well formed[m
+:[K[K [KESCESC[KOO[KBB[K   column               Display data in columns[m
+:[K[K [KESCESC[KOO[KBB[K   credential           Retrieve and store user credentials[m
+:[K[K [KESCESC[KOO[KBB[K   credential-cache     Helper to temporarily store passwords in memory[m
+:[K[K [KESCESC[KOO[KBB[K   credential-store     Helper to store credentials on disk[m
+:[K[K [KESCESC[KOO[KBB[K   fmt-merge-msg        Produce a merge commit message[m
+:[K[K [KESCESC[KOO[KBB[K   hook                 Run git hooks[m
+:[K[K [KESCESC[KOO[KBB[K   interpret-trailers   Add or parse structured information in commit messages[m
+:[K[K [KESCESC[KOO[KBB[K   mailinfo             Extracts patch and authorship from a single e-mail message[m
+:[K[K [KESCESC[KOO[KBB[K   mailsplit            Simple UNIX mbox splitter program[m
+:[K[K [KESCESC[KOO[KBB[K   merge-one-file       The standard helper program to use with git-merge-index[m
+:[K[K [KESCESC[KOO[KBB[K   patch-id             Compute unique ID for a patch[m
+:[K[K [KESCESC[KOO[KBB[K   sh-i18n              Git's i18n setup code for shell scripts[m
+:[K[K [KESCESC[KOO[KBB[K   sh-setup             Common Git shell script setup code[m
+:[K[K [KESCESC[KOO[KBB[K   stripspace           Remove unnecessary whitespace[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KExternal commands[m
+:[K[K [KESCESC[KOO[KBB[K   gui[m
+:[K[K [KESCESC[KOO[KBB[K   lfs[m
+[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[Kee[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[7m(END)[27m[K[H[2J[H   daemon               A really simple server for Git repositories[m
+   fetch-pack           Receive missing objects from another repository[m
+   http-backend         Server side implementation of Git over HTTP[m
+   send-pack            Push objects over Git protocol to another repository[m
+   update-server-info   Update auxiliary info file to help dumb servers[m
+[m
+Low-level Commands / Internal Helpers[m
+   check-attr           Display gitattributes information[m
+   check-ignore         Debug gitignore / exclude files[m
+   check-mailmap        Show canonical names and email addresses of contacts[m
+   check-ref-format     Ensures that a reference name is well formed[m
+   column               Display data in columns[m
+   credential           Retrieve and store user credentials[m
+   credential-cache     Helper to temporarily store passwords in memory[m
+   credential-store     Helper to store credentials on disk[m
+   fmt-merge-msg        Produce a merge commit message[m
+   hook                 Run git hooks[m
+   interpret-trailers   Add or parse structured information in commit messages[m
+   mailinfo             Extracts patch and authorship from a single e-mail message[m
+   mailsplit            Simple UNIX mbox splitter program[m
+   merge-one-file       The standard helper program to use with git-merge-index[m
+   patch-id             Compute unique ID for a patch[m
+   sh-i18n              Git's i18n setup code for shell scripts[m
+   sh-setup             Common Git shell script setup code[m
+   stripspace           Remove unnecessary whitespace[m
+[m
+External commands[m
+   gui[m
+   lfs[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[H[2J[H   daemon               A really simple server for Git repositories[m
+   fetch-pack           Receive missing objects from another repository[m
+   http-backend         Server side implementation of Git over HTTP[m
+   send-pack            Push objects over Git protocol to another repository[m
+   update-server-info   Update auxiliary info file to help dumb servers[m
+[m
+Low-level Commands / Internal Helpers[m
+   check-attr           Display gitattributes information[m
+   check-ignore         Debug gitignore / exclude files[m
+   check-mailmap        Show canonical names and email addresses of contacts[m
+   check-ref-format     Ensures that a reference name is well formed[m
+   column               Display data in columns[m
+   credential           Retrieve and store user credentials[m
+   credential-cache     Helper to temporarily store passwords in memory[m
+   credential-store     Helper to store credentials on disk[m
+   fmt-merge-msg        Produce a merge commit message[m
+   hook                 Run git hooks[m
+   interpret-trailers   Add or parse structured information in commit messages[m
+   mailinfo             Extracts patch and authorship from a single e-mail message[m
+   mailsplit            Simple UNIX mbox splitter program[m
+   merge-one-file       The standard helper program to use with git-merge-index[m
+   patch-id             Compute unique ID for a patch[m
+   sh-i18n              Git's i18n setup code for shell scripts[m
+   sh-setup             Common Git shell script setup code[m
+   stripspace           Remove unnecessary whitespace[m
+[m
+External co

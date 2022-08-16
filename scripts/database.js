@@ -28,10 +28,7 @@ const database = {
     ],
 
     coloniesMinerals: [
-        {id:1, colonyId:3, mineralId: 2, tons: 40},
-        {id:2, colonyId:2, mineralId: 1, tons:50 },
-        {id:3, colonyId:4, mineralId: 3, tons: 14},
-        {id:4, colonyId:1, mineralId: 4, tons: 100},
+        {id:1, colonyId:3, mineralId: 2, tons: 2},
     ],
 
     mineralFacility: [
@@ -61,7 +58,7 @@ export const getFacilities = () => {
     return database.facilities.map(facility => ({...facility}))
 }
 
-export const getColonyMinerals = () => {
+export const getColoniesMinerals = () => {
     return database.coloniesMinerals.map(coloniesMineral => ({...coloniesMineral}))
 }
 export const getMineralFacility = () => {
