@@ -1,5 +1,5 @@
 // import functions go here 
-
+import { Facilities } from "./facilities.js"
 // import { addPurchase } from "./database.js"
 // import { Sales } from "./Sales.js"
 // import {Entrees} from "./Entrees.js"
@@ -29,7 +29,7 @@ export const Exomine = () => {
                  
              </section>
              <section class="choices__facility options">
-                 
+                 ${Facilities()}
              </section>
              <section class="choices__minerals options">
                
