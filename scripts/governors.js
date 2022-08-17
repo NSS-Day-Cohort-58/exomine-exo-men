@@ -1,4 +1,4 @@
-import { getGovernors, setColonies, setGovernors } from "./database.js"
+import { getGovernors, setColonies, setGovernors, purchaseMineral } from "./database.js"
 
 const governers = getGovernors()
 
@@ -12,11 +12,6 @@ document.addEventListener(
         }
     }
 )
-
-
-
-
-
 
 export const Governers = () => {
     return `<h2>Governors</h2>
