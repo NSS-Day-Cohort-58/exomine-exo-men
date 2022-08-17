@@ -34,14 +34,14 @@ export const listColonies = () => {
     //         }
     //     }
     // )
-    const tonsAmount = colonieMinerals.find(
-        (colonieMineral) => {
-            return colonieMineral.mineralId === minerals.id
-            // return `${mineralTons} tons of ${foundMineral.name}
-            // `
-        }
-    )
+    // const tonsAmount = colonieMinerals.find(
+    //     (colonieMineral) => {
+    //         return colonieMineral.mineralId === minerals.id
+    //         // return `${mineralTons} tons of ${foundMineral.name}
+    //         // `
+    //     }
+    // )
     return `<h2>${colonyName?.name}<h2>
-            <h4>${tonsAmount?.tons} tons of ${foundMineral?.name}</h4>
+            <h4>${5} tons of ${"bitcoin"}</h4>
     `
 }

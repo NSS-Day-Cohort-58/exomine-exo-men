@@ -1,11 +1,11 @@
-import { getMinerals, setMinerals } from "./database.js"
+import { getMinerals, setMinerals, getMineralFacility, getTransientStates} from "./database.js"
 
 const minerals = getMinerals()
 
 document.addEventListener(
     "change",
     (event) => {
-        if (event.target.id === "minerals") {
+        if (event.target.name === "mineral") {
             const [, mineralId] = event.target.value.split("--")
             setMinerals(parseInt(mineralId))
 
@@ -14,15 +14,34 @@ document.addEventListener(
 )
 
 export const Minerals = () => {
-    return `
-        <ul id="minerals">
-            
-            ${minerals.map(
-        (minerals) => {
-            return `<li value="minerals--${minerals.id}">${minerals.name}</li>`
+    const mineralFacilities = getMineralFacility()
+    const transientStates = getTransientStates()
+   
+    const facilityName = mineralFacilities.find(
+        (mineralFacility) => {
+            return mineralFacility.id === transientStates.facilityId
         }
-    ).join("")
+    )
+   
+    // const mineralName = mineralFacilities.find(
+    //     (mineralFacility) => {
+    //         return mineralFacility.mineralId === transientStates.mineralId
+    //     }
+    // )
+
+    let html = "<ul>"
+        
+    const listMinerals = minerals.map(
+        (mineral) => {
+            return `<li>
+                <input type="radio" name="mineral" value="--${mineral.id}"/>${facilityName?.tons} tons of ${mineral.name}
+                </li>`
         }
-        </ul>
-    `
+    )
+    html += listMinerals.join("")
+    html += "</ul>"
+
+    return html
+    
 }
+

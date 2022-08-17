@@ -28,10 +28,7 @@ const database = {
     ],
 
     coloniesMinerals: [
-        { id: 1, colonyId: 3, mineralId: 2, tons: 2 },
-        { id: 2, colonyId: 3, mineralId: 2, tons: 2 },
-        { id: 3, colonyId: 3, mineralId: 2, tons: 2 },
-        { id: 4, colonyId: 3, mineralId: 2, tons: 2 },
+        
     ],
 
     mineralFacility: [
