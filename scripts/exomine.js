@@ -4,6 +4,7 @@ import { Facilities } from "./facilities.js"
 
 import { Governers } from "./governors.js"
 import { listColonies } from "./colonies.js"
+import { Minerals } from "./minerals.js"
 
 
 // import { addPurchase } from "./database.js"
@@ -38,17 +39,17 @@ export const Exomine = () => {
                  ${Facilities()}
              </section>
              <section class="choices__minerals options">
-               
+                ${ Minerals() }
             </section>
         </article>
 
         <article class="customerOrders">
             
+        ${listColonies()}
         </article>
-
+        
         <aside class="spaceCart">
         <h2>Space Cart </h2>
-        ${listColonies()}
         <button id="purchase">Purchase Mineral</button>
     </aside>
 
