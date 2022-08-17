@@ -3,9 +3,9 @@
 import { Facilities } from "./facilities.js"
 
 import { Governers } from "./governors.js"
+import { listColonies } from "./colonies.js"
 
-import { Sales } from "./colonies.js"
- 
+
 // import { addPurchase } from "./database.js"
 // import { Sales } from "./Sales.js"
 // import {Entrees} from "./Entrees.js"
@@ -43,11 +43,12 @@ export const Exomine = () => {
         </article>
 
         <article class="customerOrders">
-            ${Sales()}
+            
         </article>
 
         <aside class="spaceCart">
         <h2>Space Cart </h2>
+        ${listColonies()}
         <button id="purchase">Purchase Mineral</button>
     </aside>
 

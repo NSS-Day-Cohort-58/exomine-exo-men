@@ -1,37 +1,47 @@
 import { getColonies, getColoniesMinerals, getMinerals, getTransientStates } from "./database.js"
-
+import { Minerals } from "./minerals.js"
 // 
 
 
 
-const listColonies = () => {
+export const listColonies = () => {
     const colonies = getColonies()
     const minerals = getMinerals()
     const colonieMinerals = getColoniesMinerals()
-    const transientStates= getTransientStates ()
-
+    const transientStates = getTransientStates()
+    const Mineral = Minerals()
     const colonyName = colonies.find(
         (colony) => {
-            return colony.id === order.colonyId
+            return colony.id === transientStates.colonyId
 
         }
     )
 
     const foundMineral = minerals.find(
-        (mineral) => {
+        (minerals) => {
 
-            if (mineral.id === order.mineralId) {
-                return mineral.name
-            }
+            return minerals.id === transientStates.mineralId
+
 
         }
 
     )
 
-    const mineralTons = order.tons++
-
-    return `<h2>${colonyName.name}<h2>
-            <h4>
-                ${mineralTons} tons of ${foundMineral.name}
-            <h4>`
+    // const mineralTons = colonieMinerals.find(
+    //     (colonieMineral) => {
+    //         if (colonieMineral.id === transientStates.colonyId) {
+    //             return colonieMinerals.tons++
+    //         }
+    //     }
+    // )
+    const tonsAmount = colonieMinerals.find(
+        (colonieMineral) => {
+            return colonieMineral.mineralId === minerals.id
+            // return `${mineralTons} tons of ${foundMineral.name}
+            // `
+        }
+    )
+    return `<h2>${colonyName?.name}<h2>
+            <h4>${tonsAmount?.tons} tons of ${foundMineral?.name}</h4>
+    `
 }
