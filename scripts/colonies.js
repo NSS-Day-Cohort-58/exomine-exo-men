@@ -1,13 +1,14 @@
-import { getColonies, getColoniesMinerals, getMinerals } from "./database.js"
+import { getColonies, getColoniesMinerals, getMinerals, getTransientStates } from "./database.js"
+
+// 
 
 
 
-
-
-const buildOrderListItem = (order) => {
+const listColonies = () => {
     const colonies = getColonies()
     const minerals = getMinerals()
     const colonieMinerals = getColoniesMinerals()
+    const transientStates= getTransientStates ()
 
     const colonyName = colonies.find(
         (colony) => {
@@ -33,18 +34,4 @@ const buildOrderListItem = (order) => {
             <h4>
                 ${mineralTons} tons of ${foundMineral.name}
             <h4>`
-}
-
-export const Sales = () => {
-    const sales = getColoniesMinerals()
-    return `
-        <section>
-            ${sales.map(
-        (sale) => {
-            // Reflect: What is the scope of this `return` keyword?
-            return buildOrderListItem(sale)
-        }
-    ).join("")}
-        </section>
-    `
 }

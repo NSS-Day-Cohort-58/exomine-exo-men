@@ -1,5 +1,6 @@
 @import "details.css";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import url(https://i.pinimg.com/originals/1d/24/bd/1d24bd2ee4b202b16a89f3234a94e868.jpg);
 
 /*Typography
 --------------------------------------------------------------*/
@@ -16,6 +17,7 @@ textarea {
 
 body {
     background-color: rgb(245, 245, 245);
+    background-image: url(https://i.pinimg.com/originals/1d/24/bd/1d24bd2ee4b202b16a89f3234a94e868.jpg);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -31,7 +33,7 @@ h1,h2,h3,h4,h5,h6 {
 #purchase {
     margin: 1rem 0 2rem 2rem;
     padding: 0.5rem;
-    background-color: rgb(111, 72, 227);
+    background-color: gray;
     color: rgb(230, 220, 255);
     font-size: 1rem;
 }
@@ -44,4 +46,16 @@ h1,h2,h3,h4,h5,h6 {
 .title {
     text-align: center;
     margin: 1rem 0 3rem 2rem;
+}
+
+.aside {
+    flex-basis: 24%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    margin: 0 2rem;
+    border: 1px dashed dodgerblue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
 }

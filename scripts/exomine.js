@@ -46,9 +46,10 @@ export const Exomine = () => {
             ${Sales()}
         </article>
 
-        <article>
+        <aside class="spaceCart">
+        <h2>Space Cart </h2>
         <button id="purchase">Purchase Mineral</button>
-    </article>
+    </aside>
 
     `
 }

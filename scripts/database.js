@@ -50,6 +50,10 @@ export const getColonies = () => {
     return database.colonies.map(colony => ({ ...colony }))
 }
 
+export const getTransientStates = () => {
+    return database.transientState.map(transientState => ({ ...transientState }))
+}
+
 export const getMinerals = () => {
     return database.minerals.map(mineral => ({ ...mineral }))
 }
@@ -85,12 +89,12 @@ export const setColonies = (id) => {
 
 
 
-export const purchaseMineral = () => {
+// export const purchaseMineral = () => {
 
-    // Broadcast custom event to entire documement so that the
-    // application can re-render and update state
-    document.dispatchEvent(new CustomEvent("stateChanged"))
-}
+//     // Broadcast custom event to entire documement so that the
+//     // application can re-render and update state
+//     document.dispatchEvent(new CustomEvent("stateChanged"))
+// }
 export const setStyle = (id) => {
     database.orderBuilder.styleId = id
 }
@@ -100,22 +104,22 @@ export const setStyle = (id) => {
 
 
 
-export const addCustomOrder = () => {
+export const purchaseMineral = () => {
     // Copy the current state of user choices
-    const newOrder = { ...database.orderBuilder }
+    const newOrder = { ...database.transientState }
 
     // Add a new primary key to the object
-    const lastIndex = database.customOrders.length - 1
-    newOrder.id = database.customOrders[lastIndex].id + 1
+    const lastIndex = database.coloniesMinerals.length - 1
+    newOrder.id = database.coloniesMinerals[lastIndex].id + 1
 
-    // Add a timestamp to the order
-    newOrder.timestamp = Date.now()
+    // // Add a timestamp to the order
+    // newOrder.timestamp = Date.now()
 
     // Add the new order object to custom orders state
-    database.customOrders.push(newOrder)
+    database.coloniesMinerals.push(newOrder)
 
     // Reset the temporary state for user choices
-    database.orderBuilder = {}
+    database.transientState = {}
 
     // Broadcast a notification that permanent state has changed
     document.dispatchEvent(new CustomEvent("stateChanged"))
