@@ -16,7 +16,7 @@ document.addEventListener(
 export const Governers = () => {
     return `<h2>Governors</h2>
         <select id="governer">
-            <option value="1">Select a governer type</option>
+            <option value="0">Select a governer type</option>
             ${governers.map(
         (governer) => {
             return `<option value="${governer.id}--${governer.colonyId}">${governer.name}</option>`

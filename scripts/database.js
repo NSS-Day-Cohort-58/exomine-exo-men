@@ -29,6 +29,9 @@ const database = {
 
     coloniesMinerals: [
         { id: 1, colonyId: 3, mineralId: 2, tons: 2 },
+        { id: 2, colonyId: 3, mineralId: 2, tons: 2 },
+        { id: 3, colonyId: 3, mineralId: 2, tons: 2 },
+        { id: 4, colonyId: 3, mineralId: 2, tons: 2 },
     ],
 
     mineralFacility: [
@@ -51,7 +54,7 @@ export const getColonies = () => {
 }
 
 export const getTransientStates = () => {
-    return database.transientState.map(transientState => ({ ...transientState }))
+    return ({ ...database.transientState })
 }
 
 export const getMinerals = () => {
@@ -75,15 +78,17 @@ export const setFacility = (facilityId) => {
 }
 export const setGovernors = (id) => {
     database.transientState.governorId = id
+    document.dispatchEvent(new CustomEvent("stateChanged"))
 }
-export const setFacilities = (id) => {
-    database.transientState.facilityId = id
-}
+// export const setFacilities = (id) => {
+//     database.transientState.facilityId = id
+// }
 export const setMinerals = (id) => {
     database.transientState.mineralId = id
 }
 export const setColonies = (id) => {
     database.transientState.colonyId = id
+    document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 
 
