@@ -1,4 +1,4 @@
-import { getMinerals, setMinerals, getMineralFacility, getTransientStates} from "./database.js"
+import { getMinerals, setMinerals, getMineralFacility, getTransientStates, getFacilities} from "./database.js"
 
 const minerals = getMinerals()
 
@@ -16,32 +16,35 @@ document.addEventListener(
 export const Minerals = () => {
     const mineralFacilities = getMineralFacility()
     const transientStates = getTransientStates()
+    const minerals= getMinerals ()
+    const facilities= getFacilities ()
    
-    const facilityName = mineralFacilities.find(
-        (mineralFacility) => {
-            return mineralFacility.id === transientStates.facilityId
+    // loop through facilites
+    // loop through mineral facilities 
+    // if mineral faciliteis equals mineral id then print mineral name? 
+
+    let foundFaciltyObjects= []
+    for (const facility of facilities){
+        if (facility.id=== transientStates.facilityId)
+    for(const facilityOject of mineralFacilities){
+        if(facilityOject.facilityId === facility.id){
+            foundFaciltyObjects.push(facilityOject)
         }
-    )
-   
-    // const mineralName = mineralFacilities.find(
-    //     (mineralFacility) => {
-    //         return mineralFacility.mineralId === transientStates.mineralId
-    //     }
-    // )
+    }
+    }
 
-    let html = "<ul>"
-        
-    const listMinerals = minerals.map(
-        (mineral) => {
-            return `<li>
-                <input type="radio" name="mineral" value="--${mineral.id}"/>${facilityName?.tons} tons of ${mineral.name}
-                </li>`
+    let mineralFacilitiesNames = ""
+            for (const foundFaciltyObject of foundFaciltyObjects){
+                for (const mineral of minerals){
+                    if (mineral.id === foundFaciltyObject.mineralId){
+                        mineralFacilitiesNames+= `
+                        <li>
+                        <input type= "radio" name="facility" value="${mineral.id}"/>${foundFaciltyObject.tons} tons of ${mineral.name}
+                        </li>
+                        `
+                    }
+                }
+            }
+            return `${mineralFacilitiesNames}`
+
         }
-    )
-    html += listMinerals.join("")
-    html += "</ul>"
-
-    return html
-    
-}
-

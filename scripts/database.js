@@ -41,7 +41,11 @@ const database = {
         { id: 1, mineralId: 1, facilityId: 4, tons: 30 },
         { id: 2, mineralId: 2, facilityId: 3, tons: 50 },
         { id: 3, mineralId: 4, facilityId: 2, tons: 20 },
-        { id: 4, mineralId: 3, facilityId: 1, tons: 5 },
+        { id: 4, mineralId: 3, facilityId: 1, tons: 55 },
+        { id: 5, mineralId: 1, facilityId: 1, tons: 90 },
+        { id: 6, mineralId: 2, facilityId: 2, tons: 20 },
+        { id: 7, mineralId: 3, facilityId: 3, tons: 50 },
+        { id: 8, mineralId: 4, facilityId: 4, tons: 15 },
     ],
 
 
@@ -75,8 +79,8 @@ export const getMineralFacility = () => {
     return database.mineralFacility.map(mineralFacility => ({ ...mineralFacility }))
 }
 
-export const setFacility = (facilityId) => {
-    database.transientState.selectedFacility = facilityId
+export const setFacility = (id) => {
+    database.transientState.facilityId = id
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 export const setGovernors = (id) => {

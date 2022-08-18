@@ -1,5 +1,4 @@
-import { getFacilities, setFacility } from "./database.js";
-const facilities= getFacilities ()
+import { getFacilities, setFacility, getTransientStates } from "./database.js";
 
 document.addEventListener(
     "change",
@@ -14,7 +13,7 @@ document.addEventListener(
 
 
 export const Facilities = () => {
-
+    const facilities= getFacilities ()
     
 
     let html = "<h2>Facilities</h2>"
@@ -30,4 +29,28 @@ export const Facilities = () => {
     html += arrayofFacilities.join("")
     html += "</select>"
     return html
+}
+//display the facility name when facility is clicked on 
+// establish realtionship facility.id & transisent state. facilityID
+//return html that has the name of the facility
+
+export const facilitiesName = () => {
+const transientStates= getTransientStates ()
+const facilities = getFacilities ()
+
+const colonyName = facilities.find(
+    (facility) => {
+        return facility.id === transientStates.facilityId
+
+    }
+)
+if (colonyName) {
+    return `Minerals of ${colonyName?.name}
+`
+}
+else {
+    return `Facility Minerals`
+}
+
+
 }
