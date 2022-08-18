@@ -28,7 +28,7 @@ const database = {
     ],
 
     coloniesMinerals: [
-        
+        {id:1, colonyId:3, mineralId: 2, tons:40}
     ],
 
     mineralFacility: [
