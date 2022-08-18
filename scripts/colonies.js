@@ -50,10 +50,13 @@ export const governorColonyMineral = () => {
     const minerals = getMinerals()
     const transientStates= getTransientStates ()
 
+    
+
 
     let foundColonyMineralObjects= []
+    for (const colonie of colonies){
+        if (colonie.id=== transientStates.colonyId)
     for(const colonyMineralOject of colonieMinerals){
-        for (const colonie of colonies){
         if(colonyMineralOject.colonyId === colonie.id){
             foundColonyMineralObjects.push(colonyMineralOject)
         }
@@ -64,12 +67,11 @@ export const governorColonyMineral = () => {
             for (const foundColonyMineralObject of foundColonyMineralObjects){
                 for (const mineral of minerals){
                     if (mineral.id === foundColonyMineralObject.mineralId){
-                        colonyMineralNames= `${colonyMineralNames} and ${mineral.name}`
+                        colonyMineralNames+= `<div value="${mineral.id}">${foundColonyMineralObject.tons} tons of ${mineral.name}</div>`
                     }
                 }
             }
-            if (foundColonyMineralObjects.colonyId===transientStates.colonyId)
-            {return `${colonyMineralNames}`}
+            return `${colonyMineralNames}`
 
 }
 
