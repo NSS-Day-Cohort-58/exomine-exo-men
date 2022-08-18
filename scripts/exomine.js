@@ -5,6 +5,7 @@ import { Facilities } from "./facilities.js"
 import { Governers } from "./governors.js"
 import { listColonies } from "./colonies.js"
 import { Minerals } from "./minerals.js"
+import { governorColonyMineral } from "./colonies.js"
 
 
 // import { addPurchase } from "./database.js"
@@ -46,6 +47,7 @@ export const Exomine = () => {
         <article class="customerOrders">
             
         ${listColonies()}
+        ${governorColonyMineral()}
         </article>
         
         <aside class="spaceCart">
