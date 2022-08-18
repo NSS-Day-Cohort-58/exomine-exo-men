@@ -48,53 +48,30 @@ export const governorColonyMineral = () => {
     const colonies = getColonies()
     const colonieMinerals = getColoniesMinerals()
     const minerals = getMinerals()
-    const transientStates= getTransientStates ()
-
-    
+    const transientStates = getTransientStates()
 
 
-    let foundColonyMineralObjects= []
-    for (const colonie of colonies){
-        if (colonie.id=== transientStates.colonyId)
-    for(const colonyMineralOject of colonieMinerals){
-        if(colonyMineralOject.colonyId === colonie.id){
-            foundColonyMineralObjects.push(colonyMineralOject)
-        }
-    }
+
+
+    let foundColonyMineralObjects = []
+    for (const colonie of colonies) {
+        if (colonie.id === transientStates.colonyId)
+            for (const colonyMineralOject of colonieMinerals) {
+                if (colonyMineralOject.colonyId === colonie.id) {
+                    foundColonyMineralObjects.push(colonyMineralOject)
+                }
+            }
     }
 
     let colonyMineralNames = ""
-            for (const foundColonyMineralObject of foundColonyMineralObjects){
-                for (const mineral of minerals){
-                    if (mineral.id === foundColonyMineralObject.mineralId){
-                        colonyMineralNames+= `<div value="${mineral.id}">${foundColonyMineralObject.tons} tons of ${mineral.name}</div>`
-                    }
-                }
+    for (const foundColonyMineralObject of foundColonyMineralObjects) {
+        for (const mineral of minerals) {
+            if (mineral.id === foundColonyMineralObject.mineralId) {
+                colonyMineralNames += `<div value="${mineral.id}">${foundColonyMineralObject.tons} tons of ${mineral.name}</div>`
             }
-            return `${colonyMineralNames}`
+        }
+    }
+    return `${colonyMineralNames}`
 
 }
 
-
-// const colonyName = colonies.find(
-//     (colony) => {
-//         return colony.id === transientStates.colonieMineralsId
-        
-//     }
-// )    
-
-// const foundMineral = minerals.find(
-//     (minerals) => {
-
-//         return minerals.id === colonieMinerals.mineralId
-
-
-//     }
-
-// )
-// if (colonyName) {
-//     return `<h2>${foundMineral?.name}<h2>
-// `
-// }
-// else {
-//     return `Colony Minerals`
