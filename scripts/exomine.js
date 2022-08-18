@@ -7,7 +7,7 @@ import { listColonies } from "./colonies.js"
 import { Minerals } from "./minerals.js"
 import { governorColonyMineral } from "./colonies.js"
 import { facilitiesName } from "./facilities.js"
-import {spaceCart} from "./spaceCart.js"
+import { spaceCart } from "./spaceCart.js"
 
 // import { addPurchase } from "./database.js"
 // import { Sales } from "./Sales.js"
@@ -17,15 +17,15 @@ import {spaceCart} from "./spaceCart.js"
 
 // event listener go here
 
-document.addEventListener(
-    "click",
-    (clickEvent) => {
-        const itemClicked = clickEvent.target
-        if (itemClicked.id.startsWith("purchase")){
-            addPurchase()
-        }
-    }
-)
+// document.addEventListener(
+//     "click",
+//     (clickEvent) => {
+//         const itemClicked = clickEvent.target
+//         if (itemClicked.id.startsWith("purchase")){
+//             addPurchase()
+//         }
+//     }
+// )
 
 export const Exomine = () => {
     return `
@@ -42,7 +42,7 @@ export const Exomine = () => {
              </section>
              <section class="choices__minerals options">
              <h1>${facilitiesName()}</h1>
-                ${ Minerals() }
+                ${Minerals()}
             </section>
         </article>
 

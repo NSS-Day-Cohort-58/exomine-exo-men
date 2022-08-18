@@ -28,13 +28,13 @@ const database = {
     ],
 
     coloniesMinerals: [
-        {id:1, colonyId:3, mineralId: 2, tons:40},
-        {id:2, colonyId:2, mineralId: 1, tons: 30},
-        {id:3, colonyId:4, mineralId: 3, tons: 10},
-        {id:4, colonyId:1, mineralId: 4, tons: 15},
-        {id:5, colonyId:2, mineralId: 1, tons: 20},
-        {id:6, colonyId:4, mineralId: 2, tons: 50},
-        {id:7, colonyId:3, mineralId: 4, tons: 1000},
+        { id: 1, colonyId: 3, mineralId: 2, tons: 40 },
+        { id: 2, colonyId: 2, mineralId: 1, tons: 30 },
+        { id: 3, colonyId: 4, mineralId: 3, tons: 10 },
+        { id: 4, colonyId: 1, mineralId: 4, tons: 15 },
+        { id: 5, colonyId: 2, mineralId: 1, tons: 20 },
+        { id: 6, colonyId: 4, mineralId: 2, tons: 50 },
+        { id: 7, colonyId: 3, mineralId: 4, tons: 1000 },
     ],
 
     mineralFacility: [
@@ -92,6 +92,8 @@ export const setGovernors = (id) => {
 // }
 export const setMinerals = (id) => {
     database.transientState.mineralId = id
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+
 }
 export const setColonies = (id) => {
     database.transientState.colonyId = id
