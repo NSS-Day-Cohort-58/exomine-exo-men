@@ -27,21 +27,12 @@ export const listColonies = () => {
 
     )
 
-    // const mineralTons = colonieMinerals.find(
-    //     (colonieMineral) => {
-    //         if (colonieMineral.id === transientStates.colonyId) {
-    //             return colonieMinerals.tons++
-    //         }
-    //     }
-    // )
-    // const tonsAmount = colonieMinerals.find(
-    //     (colonieMineral) => {
-    //         return colonieMineral.mineralId === minerals.id
-    //         // return `${mineralTons} tons of ${foundMineral.name}
-    //         // `
-    //     }
-    // )
-    return `<h2>${colonyName?.name}<h2>
-            <h4>${5} tons of ${"bitcoin"}</h4>
+
+    if (colonyName) {
+        return `<h2>${colonyName?.name}<h2>
     `
+    }
+    else {
+        return `Colony Minerals`
+    }
 }
