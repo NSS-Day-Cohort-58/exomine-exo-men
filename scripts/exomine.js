@@ -6,6 +6,7 @@ import { Governers } from "./governors.js"
 import { listColonies } from "./colonies.js"
 import { Minerals } from "./minerals.js"
 import { governorColonyMineral } from "./colonies.js"
+import { facilitiesName } from "./facilities.js"
 
 
 // import { addPurchase } from "./database.js"
@@ -40,6 +41,7 @@ export const Exomine = () => {
                  ${Facilities()}
              </section>
              <section class="choices__minerals options">
+             <h1>${facilitiesName()}</h1>
                 ${ Minerals() }
             </section>
         </article>
