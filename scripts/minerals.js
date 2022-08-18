@@ -1,17 +1,28 @@
-import { getMinerals, setMinerals, getMineralFacility, getTransientStates, getFacilities} from "./database.js"
+import { getMinerals, setMinerals, getMineralFacility, getTransientStates, getFacilities, } from "./database.js"
+import { spaceCart } from "./spaceCart.js"
 
 const minerals = getMinerals()
 
 document.addEventListener(
-    "change",
-    (event) => {
-        if (event.target.name === "mineral") {
-            const [, mineralId] = event.target.value.split("--")
+    "click",
+    (clickEvent) => {
+        if (clickEvent.target.id === "mineral") {
+            const [, mineralId] = clickEvent.target.name.split("--")
             setMinerals(parseInt(mineralId))
 
         }
     }
 )
+
+// document.addEventListener(
+//     "click",
+//     (clickEvent) => {
+//         const itemClicked = clickEvent.target
+//         if (itemClicked.id==="mineral"){
+//             spaceCart ()
+//         }
+//     }
+// )
 
 export const Minerals = () => {
     const mineralFacilities = getMineralFacility()
@@ -37,11 +48,12 @@ export const Minerals = () => {
             for (const foundFaciltyObject of foundFaciltyObjects){
                 for (const mineral of minerals){
                     if (mineral.id === foundFaciltyObject.mineralId){
-                        mineralFacilitiesNames+= `
+                        mineralFacilitiesNames+= 
+                        `<section id="mineral">
                         <li>
-                        <input type= "radio" name="facility" value="${mineral.id}"/>${foundFaciltyObject.tons} tons of ${mineral.name}
+                        <input type= "radio" name="mineral"value="mineral--${mineral.id}"/>${foundFaciltyObject.tons} tons of ${mineral.name}
                         </li>
-                        `
+                        </section>`
                     }
                 }
             }
