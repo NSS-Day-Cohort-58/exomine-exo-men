@@ -1,4 +1,4 @@
-import { getMinerals, setMinerals, getMineralFacility, getTransientStates, getFacilities,setMineralFacility } from "./database.js"
+import { getMinerals, setMinerals, getMineralFacility, getTransientStates, getFacilities, setMineralFacility } from "./database.js"
 import { spaceCart } from "./spaceCart.js"
 
 const minerals = getMinerals()
@@ -7,9 +7,9 @@ document.addEventListener(
     "change",
     (event) => {
         if (event.target.id === "mineral") {
-            const [mineralId, mineralFacilityId] = event.target.name.split("--")
+            const [, mineralId] = event.target.name.split("--")
             setMinerals(parseInt(mineralId))
-            setMineralFacility(parseInt(mineralFacilityId))
+
 
         }
     }
@@ -42,7 +42,7 @@ export const Minerals = () => {
                 mineralFacilitiesNames +=
                     `<section id="mineral">
                         <li>
-                        <input type= "radio" name="mineral"value="${mineral.id}--${foundFaciltyObject.id}"/>${foundFaciltyObject.tons} tons of ${mineral.name}
+                        <input type= "radio" name="mineral"value="mineral--${mineral.id}"/>${foundFaciltyObject.tons} tons of ${mineral.name}
                         </li>
                         </section>`
             }
