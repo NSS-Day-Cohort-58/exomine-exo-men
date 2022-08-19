@@ -27,6 +27,7 @@ import { spaceCart } from "./spaceCart.js"
 //     }
 // )
 
+
 export const Exomine = () => {
     return `
         <header class="header">

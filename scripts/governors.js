@@ -19,7 +19,7 @@ export const Governers = () => {
             <option value="0">Select a governer type</option>
             ${governers.map(
         (governer) => {
-            return `<option value="${governer.id}--${governer.colonyId}">${governer.name}</option>`
+            return `<option selected value="${governer.id}--${governer.colonyId}">${governer.name}</option>`
         }
     ).join("")
         }
