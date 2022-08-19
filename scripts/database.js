@@ -34,7 +34,7 @@ const database = {
         { id: 4, colonyId: 1, mineralId: 4, tons: 15 },
         { id: 5, colonyId: 2, mineralId: 1, tons: 20 },
         { id: 6, colonyId: 4, mineralId: 2, tons: 50 },
-        { id: 7, colonyId: 3, mineralId: 4, tons: 1000 },
+        { id: 7, colonyId: 3, mineralId: 2, tons: 1000 },
     ],
 
     mineralFacility: [
@@ -100,7 +100,10 @@ export const setColonies = (id) => {
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 
-
+export const setMineralFacility = (id) => {
+    database.transientState.mineralFacilityId = id
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+}
 
 
 // export const purchaseMineral = () => {
@@ -138,3 +141,25 @@ export const purchaseMineral = () => {
     // Broadcast a notification that permanent state has changed
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
+
+export const purchaseMineralSubtraction = () => {
+
+   // Copy the current state of user choices
+   const newOrder = { ...database.transientState }
+
+   // Add a new primary key to the object
+   const lastIndex = database.mineralFacility.tons 
+   newOrder.tons = database.mineralFacility[lastIndex].tons - 1
+
+   // // Add a timestamp to the order
+   // newOrder.timestamp = Date.now()
+
+   // Add the new order object to custom orders state
+   database.mineralFacility.push(newOrder)
+
+   // Reset the temporary state for user choices
+   database.transientState = {}
+
+   // Broadcast a notification that permanent state has changed
+   document.dispatchEvent(new CustomEvent("stateChanged"))
+} 

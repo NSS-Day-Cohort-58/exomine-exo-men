@@ -1,5 +1,5 @@
-import { getMinerals, setMinerals, getMineralFacility, getTransientStates, getFacilities } from "./database.js"
-
+import { getMinerals, setMinerals, getMineralFacility, getTransientStates, getFacilities, getColoniesMinerals, purchaseMineralSubtraction} from "./database.js"
+const mineralFacilities= getMineralFacility ()
 // when facility mineral is clicked, inside space cart it will display "1 ton of" whatever facility mineral was clicked
 // establish a realtionship between transient state mineral id and mineral id
 // maybe loop through facility and facility mineral? because the facility and facility mineral must be displayed inside the cart
@@ -35,3 +35,30 @@ export const spaceCart = () => {
         return ""
     }
 }
+
+// create a function that subtracts 1 when the mineral that is clicked inside of facility minerals
+// establish a realtionship between mineral id and mineral facility. mineralId
+// call object with that realationship and subtract 1 from tons 
+
+   
+
+
+
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const itemClicked = clickEvent.target 
+        if (itemClicked.id === "purchase") {
+            const mineralFacilityObject = mineralFacilities.find(
+                (mineral) => {
+                    return mineral.id === transientStates.mineralFacilityId
+        
+                }
+            )
+            if (mineralFacilityObject){
+                return mineralFacilityObject.tons -1 && document.dispatchEvent(new CustomEvent("stateChanged"))
+            }
+            }
+        }
+)
+
