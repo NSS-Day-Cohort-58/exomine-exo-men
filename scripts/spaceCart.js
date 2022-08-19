@@ -1,5 +1,5 @@
-import { getMinerals, setMinerals, getMineralFacility, getTransientStates, getFacilities, getColoniesMinerals, purchaseMineralSubtraction} from "./database.js"
-const mineralFacilities= getMineralFacility ()
+import { getMinerals, setMinerals, getMineralFacility, getTransientStates, setMineralFacility } from "./database.js"
+
 // when facility mineral is clicked, inside space cart it will display "1 ton of" whatever facility mineral was clicked
 // establish a realtionship between transient state mineral id and mineral id
 // maybe loop through facility and facility mineral? because the facility and facility mineral must be displayed inside the cart
@@ -19,6 +19,7 @@ document.addEventListener(
 export const spaceCart = () => {
     const transientStates = getTransientStates()
     const minerals = getMinerals()
+
 
     const mineralName = minerals.find(
         (mineral) => {
@@ -40,25 +41,34 @@ export const spaceCart = () => {
 // establish a realtionship between mineral id and mineral facility. mineralId
 // call object with that realationship and subtract 1 from tons 
 
-   
+
 
 
 
 document.addEventListener(
     "click",
     (clickEvent) => {
-        const itemClicked = clickEvent.target 
+        const itemClicked = clickEvent.target
         if (itemClicked.id === "purchase") {
-            const mineralFacilityObject = mineralFacilities.find(
-                (mineral) => {
-                    return mineral.id === transientStates.mineralFacilityId
-        
+            const transientStates = getTransientStates()
+            const mineralFacilities = getMineralFacility()
+
+
+
+            for (const mineral of mineralFacilities) {
+                if (transientStates.mineralId === mineral.mineralId) {
+                    if (transientStates.facilityId === mineral.facilityId) {
+
+                        mineral.tons = mineral.tons - 1
+
+                    }
                 }
-            )
-            if (mineralFacilityObject){
-                return mineralFacilityObject.tons -1 && document.dispatchEvent(new CustomEvent("stateChanged"))
             }
-            }
+
+            setMineralFacility(mineralFacilities)
+
+            document.dispatchEvent(new CustomEvent("stateChanged"))
         }
+    }
 )
 

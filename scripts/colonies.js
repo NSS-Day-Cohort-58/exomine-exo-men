@@ -1,6 +1,68 @@
-import { getColonies, getColoniesMinerals, getMinerals, getTransientStates, getGovernors } from "./database.js"
+import { getColonies, getColoniesMinerals, getMinerals, getTransientStates, setColoniesMinerals, addPurchase } from "./database.js"
 import { Minerals } from "./minerals.js"
 // 
+
+
+
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const itemClicked = clickEvent.target
+        if (itemClicked.id === "purchase") {
+            const transientStates = getTransientStates()
+            const coloniesMinerals = getColoniesMinerals()
+
+
+
+            for (const newArray of coloniesMinerals) {
+                if (transientStates.mineralId === newArray.mineralId) {
+                    if (transientStates.colonyId === newArray.colonyId) {
+
+                        newArray.tons = newArray.tons + 1
+
+                    }
+                }
+            }
+
+            setColoniesMinerals(coloniesMinerals)
+
+
+            document.dispatchEvent(new CustomEvent("stateChanged"))
+        }
+    }
+)
+
+// document.addEventListener(
+//     "click",
+//     (clickEvent) => {
+//         const itemClicked = clickEvent.target
+//         if (itemClicked.id === "purchase") {
+//             const transientStates = getTransientStates()
+//             const mineralFacilities = getMineralFacility()
+
+
+
+//             for (const mineral of mineralFacilities) {
+//                 if (transientStates.mineralId === mineral.mineralId) {
+//                     if (transientStates.facilityId === mineral.facilityId) {
+
+//                         mineral.tons = mineral.tons - 1
+
+//                     }
+//                 }
+//             }
+
+//             setMineralFacility(mineralFacilities)
+
+//             document.dispatchEvent(new CustomEvent("stateChanged"))
+//         }
+//     }
+// )
+
+
+
+
+
 
 
 

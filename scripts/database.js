@@ -45,7 +45,7 @@ const database = {
         { id: 5, mineralId: 1, facilityId: 1, tons: 90 },
         { id: 6, mineralId: 2, facilityId: 2, tons: 20 },
         { id: 7, mineralId: 3, facilityId: 3, tons: 50 },
-        { id: 8, mineralId: 4, facilityId: 4, tons: 15 },
+        { id: 8, mineralId: 4, facilityId: 3, tons: 15 },
     ],
 
 
@@ -99,11 +99,17 @@ export const setColonies = (id) => {
     database.transientState.colonyId = id
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
-
-export const setMineralFacility = (id) => {
-    database.transientState.mineralFacilityId = id
+export const setMineralFacility = (newArray) => {
+    database.mineralFacility = newArray
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
+
+
+export const setColoniesMinerals = (newArray) => {
+    database.coloniesMinerals = newArray
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+}
+
 
 
 // export const purchaseMineral = () => {
@@ -121,7 +127,7 @@ export const setStyle = (id) => {
 
 
 
-export const purchaseMineral = () => {
+export const addPurchase = () => {
     // Copy the current state of user choices
     const newOrder = { ...database.transientState }
 
@@ -129,7 +135,9 @@ export const purchaseMineral = () => {
     const lastIndex = database.coloniesMinerals.length - 1
     newOrder.id = database.coloniesMinerals[lastIndex].id + 1
 
-    // // Add a timestamp to the order
+    newOrder.tons = database.coloniesMinerals.tons + 1
+
+    // Add a timestamp to the order
     // newOrder.timestamp = Date.now()
 
     // Add the new order object to custom orders state
@@ -141,25 +149,3 @@ export const purchaseMineral = () => {
     // Broadcast a notification that permanent state has changed
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
-
-export const purchaseMineralSubtraction = () => {
-
-   // Copy the current state of user choices
-   const newOrder = { ...database.transientState }
-
-   // Add a new primary key to the object
-   const lastIndex = database.mineralFacility.tons 
-   newOrder.tons = database.mineralFacility[lastIndex].tons - 1
-
-   // // Add a timestamp to the order
-   // newOrder.timestamp = Date.now()
-
-   // Add the new order object to custom orders state
-   database.mineralFacility.push(newOrder)
-
-   // Reset the temporary state for user choices
-   database.transientState = {}
-
-   // Broadcast a notification that permanent state has changed
-   document.dispatchEvent(new CustomEvent("stateChanged"))
-} 

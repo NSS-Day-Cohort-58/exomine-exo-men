@@ -1,4 +1,4 @@
-import { getGovernors, setColonies, setGovernors, purchaseMineral } from "./database.js"
+import { getGovernors, setColonies, setGovernors,  } from "./database.js"
 
 const governers = getGovernors()
 
